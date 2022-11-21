@@ -1,0 +1,23 @@
+im: To write a design document on how to crawl a website site and save the images and text from the website. Write your thoughts on how you will approach the problem along with components you need.
+
+Web Crawler:
+
+A web crawler is a type of bot that is typically operated by search engines to index the content of websites all across the internet so that those websites can appear in search engine results.
+
+Requirements for crawling on a website:
+DNS Resolver - A URL needs to be translated into an IP address by the DNS resolver before the HTML page can be retrieved.
+
+Process:
+
+A Web crawler starts with a list of URLs to visit, called the seeds. 
+As the crawler visits these URLs, it identifies all the hyperlinks in the page and adds them to the list of URLs to visit.  
+If the crawler is performing archiving of websites it copies and saves the information as it goes. The archive is known as the repository and is designed to store and manage the collection of web pages. 
+Using Httrack tool:
+ 
+HTTrack is a free and open source Web crawler and offline browser, developed by Xavier Roche
+ 
+It allows you to download a World Wide Web site from the Internet to a local directory, building recursively all directories, getting HTML, images, and other files from the server to your computer. HTTrack arranges the original site’s relative link-structure. 
+Type following command inside the terminal
+httrack http://tptl.in –O /root/Desktop/file
+It will save the output inside given directory /root/Desktop/file
+
